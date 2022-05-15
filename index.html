@@ -1,12 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+!DOCTYPE html>
+<html lang="esp">
+
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>hola mi test day</h1>
+    <header>
+    
+        <img src="./imagenes/Group 3.png">
+    </header>
+    <main>
+    <section>
+        <textarea type="text" class="input-text" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+
+        <h6 class="instruccion">Solo letras minúsculas y sin acentos</h6>
+
+        <div class=" estiloBotones">
+            <button type="button" class="botonA" onclick="btnEncriptar()" >Encriptar</button>
+            <button type="button" class="botonB" onclick="btnDesencriptar()" >Desencriptar</button>
+            
+        </div>
+    </section>
+    
+    <section>
+                   
+        <textarea type="text" class="output-text-area" cols="30" rows="15"  placeholder="Ningún mensaje fue encontrado" ></textarea>
+         <div >
+            <button type="button" class= "botonC" onclick="copiar()">Copiar</button> 
+         </div>
+        
+    </section>
+</main>
+
+<footer>
+    <p class="piePagina">&copy Copiright Claudio Torancio</p>
+</footer>
+    
 </body>
+<script src="script.js"></script>
+
 </html>
